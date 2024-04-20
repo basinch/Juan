@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    [Header("Generel")]
+    [Header("General")]
 
     public List<itemType> inventoryList;
     public int selectedItem;
+    public float playerReach;
 
     [Space(20)]
     [Header("Keys")]
@@ -92,4 +93,9 @@ public class PlayerInventory : MonoBehaviour
         GameObject selectedItemGameObject = itemSetActive[inventoryList[selectedItem]];
         selectedItemGameObject.SetActive(true);
     }
+}
+
+public interface IPickable
+{
+    void PickItem();
 }
