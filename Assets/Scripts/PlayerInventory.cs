@@ -77,6 +77,15 @@ public class PlayerInventory : MonoBehaviour
         GameObject selectedItemGameObject = itemSetActive[inventoryList[selectedItem]];
         selectedItemGameObject.SetActive(true);
     }
+
+    public void OnCollisionStay2D(Collision2D collision)
+    {
+        if (Input.GetKey(pickItemKey) && collision.gameObject.CompareTag("Pickable"))
+        {
+            Destroy(gameObject);
+            Debug.Log("Picked");
+        }
+    }
 }
 
 public interface IPickable
