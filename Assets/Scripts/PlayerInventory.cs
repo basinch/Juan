@@ -21,6 +21,7 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] GameObject brush_item;
     [SerializeField] GameObject carrot_item;
     [SerializeField] GameObject whip_item;
+    [SerializeField] GameObject empty_item;
 
     private Dictionary<itemType, GameObject> itemSetActive = new Dictionary<itemType, GameObject>() { };
 
@@ -30,6 +31,7 @@ public class PlayerInventory : MonoBehaviour
         itemSetActive.Add(itemType.Brush, brush_item);
         itemSetActive.Add(itemType.Carrot, carrot_item);
         itemSetActive.Add(itemType.Whip, whip_item);
+        itemSetActive.Add(itemType.Empty, empty_item);
 
         NewItemSelected();
     }
@@ -61,26 +63,6 @@ public class PlayerInventory : MonoBehaviour
             selectedItem = 4;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha6) && inventoryList.Count > 5)
-        {
-            selectedItem = 5;
-            NewItemSelected();
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha7) && inventoryList.Count > 6)
-        {
-            selectedItem = 6;
-            NewItemSelected();
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha8) && inventoryList.Count > 7)
-        {
-            selectedItem = 7;
-            NewItemSelected();
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha9) && inventoryList.Count > 8)
-        {
-            selectedItem = 8;
-            NewItemSelected();
-        }
     }
 
     private void NewItemSelected()
@@ -89,6 +71,7 @@ public class PlayerInventory : MonoBehaviour
         brush_item.SetActive(false);
         carrot_item.SetActive(false);
         whip_item.SetActive(false);
+        empty_item.SetActive(false);
 
         GameObject selectedItemGameObject = itemSetActive[inventoryList[selectedItem]];
         selectedItemGameObject.SetActive(true);

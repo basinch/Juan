@@ -11,4 +11,4 @@ public class ItemScriptableObj : ScriptableObject
     public Sprite item_sprite;
 }
 
-public enum itemType { Apple, Carrot, Whip, Brush };
+public enum itemType { Apple, Carrot, Whip, Brush, Empty };
