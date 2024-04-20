@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -85,6 +85,7 @@ public class PlayerInventory : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("Picked");
         }
+        Debug.Log("Dışında");
     }
 }
 
