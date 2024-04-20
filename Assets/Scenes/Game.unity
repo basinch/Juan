@@ -954,6 +954,7 @@ MonoBehaviour:
   rb2d: {fileID: 726781466}
   moveSpeed: 10
   animator: {fileID: 726781467}
+  ridingHorse: 0
 --- !u!212 &726781464
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -995,12 +996,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6598946016331564889, guid: 23748c298f885bf4c89671f6d30f562b, type: 3}
+  m_Sprite: {fileID: 349782353, guid: b01902e064525f046abf290a0a3f2bcf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.15, y: 0.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1015,8 +1016,8 @@ Transform:
   m_GameObject: {fileID: 726781462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.34715, y: -0.12133, z: 0}
-  m_LocalScale: {x: 2.2483566, y: 2.2483566, z: 2.2483566}
+  m_LocalPosition: {x: -0.34716, y: 0.7, z: 0}
+  m_LocalScale: {x: 13.8674135, y: 13.8674135, z: 13.8674135}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1105,8 +1106,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.15, y: 0.17}
+    newSize: {x: 0.15, y: 0.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

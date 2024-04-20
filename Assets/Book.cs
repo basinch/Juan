@@ -22,8 +22,7 @@ public class Book : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(bookNumber); 
-        Debug.Log(bookImg);
+
     }
     public void NextButton()
     {
