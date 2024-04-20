@@ -503,7 +503,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.025034226, y: -0.050478045, z: -0.72111493}
+  m_LocalPosition: {x: 0.25, y: -0, z: -0.721115}
   m_LocalScale: {x: 0.072111495, y: 0.072111495, z: 0.072111495}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1016,7 +1016,7 @@ Transform:
   m_GameObject: {fileID: 726781462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.34716, y: 0.7, z: -2.5761}
+  m_LocalPosition: {x: -2.1, y: 2.2, z: -2.5761}
   m_LocalScale: {x: 9.291444, y: 9.291444, z: 9.291444}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1049,7 +1049,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &726781467
 Animator:
   serializedVersion: 5
@@ -1103,18 +1103,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0003897883, y: -0.00022891909}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.15, y: 0.17}
+    oldSize: {x: 0.14, y: 0.17}
     newSize: {x: 0.15, y: 0.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 38.399998, y: 21.599998}
+  m_Size: {x: 0.15064275, y: 0.17260607}
   m_EdgeRadius: 0
 --- !u!1 &798031654
 GameObject:
@@ -1832,9 +1832,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1457121285}
-    m_ColliderPaths: []
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths: []
   m_VertexDistance: 0.0005
@@ -1875,7 +1873,7 @@ TilemapCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457121281}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2134,6 +2132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764029206}
   - component: {fileID: 1764029205}
+  - component: {fileID: 1764029207}
   m_Layer: 0
   m_Name: ahir
   m_TagString: Untagged
@@ -2208,6 +2207,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &1764029207
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764029204}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.67, y: 1.25}
+    newSize: {x: 1.67, y: 1.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.6962197, y: 0.19052392}
+      - {x: 0.009814709, y: 0.5274959}
+      - {x: -0.085724816, y: 0.49802738}
+      - {x: -0.70606273, y: 0.17409815}
+      - {x: -0.6962398, y: -0.3510382}
+      - {x: -0.69034594, y: -0.30192366}
+      - {x: -0.69623965, y: -0.2803133}
+      - {x: -0.5469318, y: -0.2763841}
+      - {x: -0.6864168, y: -0.29013604}
+      - {x: -0.6844521, y: -0.34710884}
+      - {x: 0.7021335, y: -0.3294278}
+      - {x: 0.702998, y: 0.13453925}
+      - {x: 0.73553133, y: 0.15338957}
+      - {x: 0.70946044, y: 0.19570835}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1895562399
 GameObject:
   m_ObjectHideFlags: 0
