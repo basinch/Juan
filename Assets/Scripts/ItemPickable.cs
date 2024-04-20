@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class ItemPickable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ItemScriptableObj itemScriptableObject;
 
-    // Update is called once per frame
-    void Update()
+    public void PickItem()
     {
-        
+        Destroy(gameObject);
     }
 }

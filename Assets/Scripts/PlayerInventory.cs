@@ -9,6 +9,7 @@ public class PlayerInventory : MonoBehaviour
     public List<itemType> inventoryList;
     public int selectedItem;
     public float playerReach;
+    public bool hasWhip = false, hasBrush = false, hasCarrot = false, hasApple = false;
 
     [Space(20)]
     [Header("Keys")]
@@ -43,22 +44,22 @@ public class PlayerInventory : MonoBehaviour
             selectedItem = 0;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2) && inventoryList.Count > 1) 
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && inventoryList.Count > 1 && hasApple) 
         {
             selectedItem = 1;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && inventoryList.Count > 2)
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && inventoryList.Count > 2 && hasCarrot)
         {
             selectedItem = 2;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha4) && inventoryList.Count > 3)
+        else if (Input.GetKeyDown(KeyCode.Alpha4) && inventoryList.Count > 3 && hasBrush)
         {
             selectedItem = 3;
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha5) && inventoryList.Count > 4)
+        else if (Input.GetKeyDown(KeyCode.Alpha5) && inventoryList.Count > 4 && hasWhip)
         {
             selectedItem = 4;
             NewItemSelected();
