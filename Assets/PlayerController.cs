@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public GameObject gulpembe;
     public GameObject twig;
     public GameObject juan;
-    private GameObject horseGettingRidden;
+    public GameObject horseGettingRidden;
 
     [SerializeField] private Rigidbody2D rb2d;
     public PlayerInventory playerInventory;
