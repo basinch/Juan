@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject mainMenu;
+    public GameObject creditsMenu;
     public GameObject optionsMenu;
     public AudioMixer audioMixer;
     // Start is called before the first frame update
@@ -22,11 +23,20 @@ public class Menu : MonoBehaviour
     {
         mainMenu.SetActive(false);
         optionsMenu.SetActive(true);
+        creditsMenu.SetActive(false);
     }
+    public void CreditsButton()
+    {
+        mainMenu.SetActive(false);
+        optionsMenu.SetActive(false);
+        creditsMenu.SetActive(true);
+    }
+
     public void BackButton()
     {
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
+        creditsMenu.SetActive(false);
     }
     public void SetVolume(float volume)
     {

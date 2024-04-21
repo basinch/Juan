@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public GameObject gulpembe;
     public GameObject twig;
     public GameObject juan;
-    private GameObject horseGettingRidden;
+    public GameObject horseGettingRidden;
 
     public Image appleIcon;
     public Image brushIcon;
