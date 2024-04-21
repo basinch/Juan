@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         {
             if (horseGettingRidden != null)
             {
-                ShowObject();
+                StopRidingHorse();
             }
             else if (isColliding)
             {
@@ -45,8 +45,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-
-        Debug.Log(animator.GetFloat("Speed"));
         if (animator.GetFloat("Speed") > 0)
         {
             isMoving = true;
@@ -146,7 +144,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool(objectTag, true);
     }
 
-    private void ShowObject()
+    private void StopRidingHorse()
     {
         Instantiate(horseGettingRidden, transform.position, transform.rotation);
         horseGettingRidden = null;
