@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class PlayerInventory : MonoBehaviour
     public int selectedItem;
     public float playerReach;
     public bool hasWhip = false, hasBrush = false, hasCarrot = false, hasApple = false;
+
+    [SerializeField] private Image apple_image;
+    [SerializeField] private Image carrot_image;
+    [SerializeField] private Image brush_image;
+    [SerializeField] private Image whip_image;
 
     [Space(20)]
     [Header("Keys")]
@@ -64,6 +70,15 @@ public class PlayerInventory : MonoBehaviour
             selectedItem = 4;
             NewItemSelected();
         }
+
+        if(hasApple)
+            apple_image.enabled = true;
+        if(hasCarrot)
+            carrot_image.enabled = true;
+        if(hasBrush)
+            brush_image.enabled = true;
+        if(hasWhip)
+            whip_image.enabled = true;
     }
 
     private void NewItemSelected()
