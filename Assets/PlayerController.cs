@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     public string objectTag;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -75,9 +75,9 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.M))
         {
-            if(collidedObject != null)
+            if (collidedObject != null && horseGettingRidden == null)
             {
                 if (collidedObject.CompareTag("Beyazid") && !inv.hasApple && isColliding)
                 {
@@ -100,8 +100,7 @@ public class PlayerController : MonoBehaviour
                     StartRiding();
                 }
             }
-
-            if (horseGettingRidden != null)
+            else
             {
                 StopRidingHorse();
             }
@@ -111,7 +110,7 @@ public class PlayerController : MonoBehaviour
         {
             isMoving = true;
         }
-        else if(animator.GetFloat("Speed") == 0)
+        else if (animator.GetFloat("Speed") == 0)
         {
             isMoving = false;
         }
@@ -163,7 +162,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void StartRiding()
-    {       
+    {
         if (collidedObject.CompareTag("Beyazid") && !inv.hasApple)
         {
             objectTag = "Beyazid";
@@ -194,8 +193,8 @@ public class PlayerController : MonoBehaviour
             Destroy(collidedObject);
             animator.SetBool(objectTag, true);
         }
-        
-        if(objectTag != null)
+
+        if (objectTag != null)
         {
             switch (objectTag)
             {
