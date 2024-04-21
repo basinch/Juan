@@ -8,8 +8,9 @@ public class PlayerInventory : MonoBehaviour
     [Header("General")]
 
     public List<itemType> inventoryList;
-    public int selectedItem;
+    public int selectedItem = 0;
     public float playerReach;
+    public Image handBG, appleBG, carrotBG, brushBG, whipBG;
     public bool hasWhip = false, hasBrush = false, hasCarrot = false, hasApple = false;
 
     /*[SerializeField] private Image apple_image;
@@ -40,6 +41,11 @@ public class PlayerInventory : MonoBehaviour
         itemSetActive.Add(itemType.Whip, whip_item);
         itemSetActive.Add(itemType.Empty, empty_item);
 
+        handBG.canvasRenderer.SetAlpha(1);
+        appleBG.canvasRenderer.SetAlpha(.8f);
+        carrotBG.canvasRenderer.SetAlpha(.8f);
+        brushBG.canvasRenderer.SetAlpha(.8f);
+        whipBG.canvasRenderer.SetAlpha(.8f);
         NewItemSelected();
     }
 
@@ -48,26 +54,51 @@ public class PlayerInventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1) && inventoryList.Count > 0)
         {
             selectedItem = 0;
+            handBG.canvasRenderer.SetAlpha(1);
+            appleBG.canvasRenderer.SetAlpha(.8f);
+            carrotBG.canvasRenderer.SetAlpha(.8f);   
+            brushBG.canvasRenderer.SetAlpha(.8f);
+            whipBG.canvasRenderer.SetAlpha(.8f);
             NewItemSelected();
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2) && inventoryList.Count > 1 && hasApple) 
         {
             selectedItem = 1;
+            handBG.canvasRenderer.SetAlpha(.8f);
+            appleBG.canvasRenderer.SetAlpha(1f);
+            carrotBG.canvasRenderer.SetAlpha(.8f);
+            brushBG.canvasRenderer.SetAlpha(.8f);
+            whipBG.canvasRenderer.SetAlpha(.8f);
             NewItemSelected();
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3) && inventoryList.Count > 2 && hasCarrot)
         {
             selectedItem = 2;
+            handBG.canvasRenderer.SetAlpha(.8f);
+            appleBG.canvasRenderer.SetAlpha(.8f);
+            carrotBG.canvasRenderer.SetAlpha(1f);
+            brushBG.canvasRenderer.SetAlpha(.8f);
+            whipBG.canvasRenderer.SetAlpha(.8f);
             NewItemSelected();
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4) && inventoryList.Count > 3 && hasBrush)
         {
             selectedItem = 3;
+            handBG.canvasRenderer.SetAlpha(.8f);
+            appleBG.canvasRenderer.SetAlpha(.8f);
+            carrotBG.canvasRenderer.SetAlpha(.8f);
+            brushBG.canvasRenderer.SetAlpha(1f);
+            whipBG.canvasRenderer.SetAlpha(.8f);
             NewItemSelected();
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5) && inventoryList.Count > 4 && hasWhip)
         {
             selectedItem = 4;
+            handBG.canvasRenderer.SetAlpha(.8f);
+            appleBG.canvasRenderer.SetAlpha(.8f);
+            carrotBG.canvasRenderer.SetAlpha(.8f);
+            brushBG.canvasRenderer.SetAlpha(.8f);
+            whipBG.canvasRenderer.SetAlpha(1f);
             NewItemSelected();
         }
 
@@ -81,7 +112,7 @@ public class PlayerInventory : MonoBehaviour
             whip_image.enabled = true;    çalıştıramadım  */
     }
 
-    private void NewItemSelected()
+    public void NewItemSelected()
     {
         apple_item.SetActive(false);
         brush_item.SetActive(false);

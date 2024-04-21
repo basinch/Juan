@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,8 +13,14 @@ public class PlayerController : MonoBehaviour
     public GameObject juan;
     private GameObject horseGettingRidden;
 
+    public Image appleIcon;
+    public Image brushIcon;
+    public Image whipIcon;
+    public Image carrotIcon;
+
+
     [SerializeField] private Rigidbody2D rb2d;
-    public PlayerInventory playerInventory;
+    public PlayerInventory inv;
     Vector2 movement;
     public float moveSpeed = 5f;
     public Animator animator;
@@ -22,7 +29,6 @@ public class PlayerController : MonoBehaviour
 
     private GameObject collidedObject;
     private bool isColliding = false;
-    private bool isObjectVisible = true;
     public string objectTag;
     void Start()
     {
@@ -32,16 +38,72 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.K))
         {
+            if (collidedObject != null)
+            {
+                if (collidedObject.CompareTag("Beyazid") && inv.selectedItem == 1 && isColliding)
+                {
+                    inv.hasApple = false;
+                    appleIcon.color = Color.black;
+                    inv.selectedItem = 0;
+                    inv.selectedItem = 0;
+                    inv.NewItemSelected();
+                }
+                else if (collidedObject.CompareTag("Donkey") && inv.selectedItem == 2 && isColliding)
+                {
+                    inv.hasCarrot = false;
+                    carrotIcon.color = Color.black;
+                    inv.selectedItem = 0;
+                    inv.selectedItem = 0;
+                    inv.NewItemSelected();
+                }
+                else if (collidedObject.CompareTag("Gulpembe") && inv.selectedItem == 3 && isColliding)
+                {
+                    inv.hasBrush = false;
+                    brushIcon.color = Color.black;
+                    inv.selectedItem = 0;
+                    inv.selectedItem = 0;
+                    inv.NewItemSelected();
+                }
+                else if (collidedObject.CompareTag("Juan") && inv.selectedItem == 4 && isColliding)
+                {
+                    inv.hasWhip = false;
+                    whipIcon.color = Color.black;
+                    inv.selectedItem = 0;
+                    inv.NewItemSelected();
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if(collidedObject != null)
+            {
+                if (collidedObject.CompareTag("Beyazid") && !inv.hasApple && isColliding)
+                {
+
+                    StartRiding();
+                }
+                else if (collidedObject.CompareTag("Donkey") && !inv.hasCarrot && isColliding)
+                {
+
+                    StartRiding();
+                }
+                else if (collidedObject.CompareTag("Gulpembe") && !inv.hasBrush && isColliding)
+                {
+
+                    StartRiding();
+                }
+                else if (collidedObject.CompareTag("Juan") && !inv.hasWhip && isColliding)
+                {
+
+                    StartRiding();
+                }
+            }
+
             if (horseGettingRidden != null)
             {
                 StopRidingHorse();
-            }
-            else if (isColliding)
-            {
-                HideObject();
             }
         }
 
@@ -62,7 +124,7 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Vertical", movement.y);
             animator.SetFloat("Speed", movement.sqrMagnitude);
 
-            if (playerInventory.selectedItem > 0)
+            if (inv.selectedItem > 0)
             {
                 animator.SetBool("Holding", true);
             }
@@ -100,48 +162,60 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void HideObject()
+    private void StartRiding()
     {       
-        if (collidedObject.CompareTag("Beyazid"))
+        if (collidedObject.CompareTag("Beyazid") && !inv.hasApple)
         {
             objectTag = "Beyazid";
+            Destroy(collidedObject);
+            animator.SetBool(objectTag, true);
         }
-        else if (collidedObject.CompareTag("Donkey"))
+        else if (collidedObject.CompareTag("Donkey") && !inv.hasCarrot)
         {
             objectTag = "Donkey";
+            Destroy(collidedObject);
+            animator.SetBool(objectTag, true);
         }
-        else if (collidedObject.CompareTag("Gulpembe"))
+        else if (collidedObject.CompareTag("Gulpembe") && !inv.hasBrush)
         {
             objectTag = "Gulpembe";
+            Destroy(collidedObject);
+            animator.SetBool(objectTag, true);
         }
-        else if (collidedObject.CompareTag("Juan"))
+        else if (collidedObject.CompareTag("Juan") && !inv.hasWhip)
         {
             objectTag = "Juan";
+            Destroy(collidedObject);
+            animator.SetBool(objectTag, true);
         }
         else if (collidedObject.CompareTag("twig"))
         {
             objectTag = "twig";
+            Destroy(collidedObject);
+            animator.SetBool(objectTag, true);
         }
-        switch (objectTag)
+        
+        if(objectTag != null)
         {
-            case ("Beyazid"):
-                horseGettingRidden = beyazid;
-                break;
-            case ("Donkey"):
-                horseGettingRidden = donkey;
-                break;
-            case ("Gulpembe"):
-                horseGettingRidden = gulpembe;
-                break;
-            case ("Juan"):
-                horseGettingRidden = juan;
-                break;
-            case ("twig"):
-                horseGettingRidden = twig;
-                break;
+            switch (objectTag)
+            {
+                case ("Beyazid"):
+                    horseGettingRidden = beyazid;
+                    break;
+                case ("Donkey"):
+                    horseGettingRidden = donkey;
+                    break;
+                case ("Gulpembe"):
+                    horseGettingRidden = gulpembe;
+                    break;
+                case ("Juan"):
+                    horseGettingRidden = juan;
+                    break;
+                case ("twig"):
+                    horseGettingRidden = twig;
+                    break;
+            }
         }
-        Destroy(collidedObject);
-        animator.SetBool(objectTag, true);
     }
 
     private void StopRidingHorse()
@@ -149,7 +223,7 @@ public class PlayerController : MonoBehaviour
         Instantiate(horseGettingRidden, transform.position, transform.rotation);
         horseGettingRidden = null;
         animator.SetBool(objectTag, false);
-
+        objectTag = null;
     }
 
 }

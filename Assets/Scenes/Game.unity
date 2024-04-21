@@ -3100,7 +3100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3289,7 +3289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4104,7 +4104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4192,8 +4192,12 @@ MonoBehaviour:
   gulpembe: {fileID: 5866829212744682322, guid: 2b080f6cf725c11499fd88c46e591f53, type: 3}
   twig: {fileID: 6122868745139639623, guid: 0a0e417de7bd4cc4c9ac0b439af2fa8c, type: 3}
   juan: {fileID: 7221746412164789703, guid: 5a9556d383890ed459607624f674e9c2, type: 3}
+  appleIcon: {fileID: 682139848}
+  brushIcon: {fileID: 1963275141}
+  whipIcon: {fileID: 563170216}
+  carrotIcon: {fileID: 2099119354}
   rb2d: {fileID: 726781466}
-  playerInventory: {fileID: 726781469}
+  inv: {fileID: 726781469}
   moveSpeed: 10
   animator: {fileID: 726781467}
   ridingHorse: 0
@@ -4381,6 +4385,11 @@ MonoBehaviour:
   inventoryList: 0400000000000000010000000300000002000000
   selectedItem: 0
   playerReach: 0
+  handBG: {fileID: 2093607563}
+  appleBG: {fileID: 622614769}
+  carrotBG: {fileID: 568048117}
+  brushBG: {fileID: 1591905024}
+  whipBG: {fileID: 700348879}
   hasWhip: 1
   hasBrush: 1
   hasCarrot: 1
@@ -13106,7 +13115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
