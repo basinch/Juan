@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public Animator animator;
     public bool ridingHorse = false;
+    public bool isMoving = false;
     void Start()
     {
         
@@ -18,6 +19,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(animator.GetFloat("Speed"));
+        if (animator.GetFloat("Speed") > 0)
+        {
+            isMoving = true;
+        }
+        else if(animator.GetFloat("Speed") == 0)
+        {
+            isMoving = false;
+        }
         if (!ridingHorse)
         {
             movement.x = Input.GetAxisRaw("Horizontal");
