@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemDestroy : MonoBehaviour
 {
 
-    [SerializeField] private PlayerInventory inventory;
+    public PlayerInventory inventory;
 
     public bool canDestroy = false;
 
@@ -25,23 +25,23 @@ public class ItemDestroy : MonoBehaviour
     {
         if(canDestroy == true && collision.tag == "Apple")
         {
-            //inventory.hasApple = true;
+            inventory.hasApple = true;
             Destroy(collision.gameObject);
 
         }
         if (canDestroy == true && collision.tag == "Carrot")
         {
-            //inventory.hasCarrot = true;
+            inventory.hasCarrot = true;
             Destroy(collision.gameObject);
         }
         if (canDestroy == true && collision.tag == "Brush")
         {
-            //inventory.hasBrush = true;
+            inventory.hasBrush = true;
             Destroy(collision.gameObject);
         }
         if (canDestroy == true && collision.tag == "Whip")
         {
-            //inventory.hasWhip = true;
+            inventory.hasWhip = true;
             Destroy(collision.gameObject);
         }
     }
