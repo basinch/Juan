@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 180444178817424658}
   - component: {fileID: 4936135421267410010}
   - component: {fileID: -6990485834897529352}
-  m_Layer: 0
+  - component: {fileID: 8094191107352256043}
+  m_Layer: 7
   m_Name: Gulpembe
   m_TagString: Gulpembe
   m_Icon: {fileID: 0}
@@ -130,3 +131,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &8094191107352256043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866829212744682322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913a1cf51abca454ea0c065e148a1aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

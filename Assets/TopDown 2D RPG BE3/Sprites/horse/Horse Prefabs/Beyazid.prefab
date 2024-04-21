@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1934889916452083048}
   - component: {fileID: 3876065303523361866}
   - component: {fileID: 4344616439290648725}
-  m_Layer: 0
+  - component: {fileID: 6615497540489664267}
+  m_Layer: 7
   m_Name: Beyazid
   m_TagString: Beyazid
   m_Icon: {fileID: 0}
@@ -97,7 +98,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -130,3 +131,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &6615497540489664267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132396240430892293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913a1cf51abca454ea0c065e148a1aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
