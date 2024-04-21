@@ -12,10 +12,10 @@ public class PlayerInventory : MonoBehaviour
     public float playerReach;
     public bool hasWhip = false, hasBrush = false, hasCarrot = false, hasApple = false;
 
-    [SerializeField] private Image apple_image;
+    /*[SerializeField] private Image apple_image;
     [SerializeField] private Image carrot_image;
     [SerializeField] private Image brush_image;
-    [SerializeField] private Image whip_image;
+    [SerializeField] private Image whip_image;*/
 
     [Space(20)]
     [Header("Keys")]
@@ -71,14 +71,14 @@ public class PlayerInventory : MonoBehaviour
             NewItemSelected();
         }
 
-        if(hasApple)
+        /*if(hasApple)
             apple_image.enabled = true;
         if(hasCarrot)
             carrot_image.enabled = true;
         if(hasBrush)
             brush_image.enabled = true;
         if(hasWhip)
-            whip_image.enabled = true;
+            whip_image.enabled = true;    çalıştıramadım  */
     }
 
     private void NewItemSelected()
