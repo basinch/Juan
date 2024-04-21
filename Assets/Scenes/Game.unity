@@ -4172,12 +4172,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf18113272e063a459e01465041ffd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  beyazid: {fileID: 8132396240430892293, guid: 1700d87bdecb5774e997f5272a4a6d37, type: 3}
+  donkey: {fileID: 6885411057325008628, guid: 07d26a7f9b901ac409c9c7fd91af6bd7, type: 3}
+  gulpembe: {fileID: 5866829212744682322, guid: 2b080f6cf725c11499fd88c46e591f53, type: 3}
+  twig: {fileID: 6122868745139639623, guid: 0a0e417de7bd4cc4c9ac0b439af2fa8c, type: 3}
+  juan: {fileID: 7221746412164789703, guid: 5a9556d383890ed459607624f674e9c2, type: 3}
   rb2d: {fileID: 726781466}
   playerInventory: {fileID: 726781469}
   moveSpeed: 10
   animator: {fileID: 726781467}
   ridingHorse: 0
   isMoving: 0
+  objectTag: 
 --- !u!212 &726781464
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -139465,8 +139471,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4344616439290648725, guid: 1700d87bdecb5774e997f5272a4a6d37, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8132396240430892293, guid: 1700d87bdecb5774e997f5272a4a6d37, type: 3}
       propertyPath: m_Name
+      value: Beyazid
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132396240430892293, guid: 1700d87bdecb5774e997f5272a4a6d37, type: 3}
+      propertyPath: m_TagString
       value: Beyazid
       objectReference: {fileID: 0}
     m_RemovedComponents: []
