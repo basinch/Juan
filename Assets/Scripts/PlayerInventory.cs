@@ -15,7 +15,7 @@ public class PlayerInventory : MonoBehaviour
     /*[SerializeField] private Image apple_image;
     [SerializeField] private Image carrot_image;
     [SerializeField] private Image brush_image;
-    [SerializeField] private Image whip_image;*/
+    [SerializeField] private Image whip_image; çalıştıramadım */
 
     [Space(20)]
     [Header("Keys")]
