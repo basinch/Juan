@@ -8938,6 +8938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f5c1a8b9caa3e488b4d9fff37aa3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endGameCounter: 0
 --- !u!61 &1348658895
 BoxCollider2D:
   m_ObjectHideFlags: 0

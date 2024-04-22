@@ -41,6 +41,7 @@ public class Menu : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
+        Debug.Log("as,,");
     }
     // Update is called once per frame
     void Update()

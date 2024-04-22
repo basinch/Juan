@@ -99,6 +99,11 @@ public class PlayerController : MonoBehaviour
 
                     StartRiding();
                 }
+                else if (collidedObject.CompareTag("twig") && isColliding)
+                {
+
+                    StartRiding();
+                }
             }
             else
             {
