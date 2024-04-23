@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
                     StartRiding();
                 }
             }
-            else
+            else if(horseGettingRidden)
             {
                 StopRidingHorse();
             }
@@ -206,11 +206,11 @@ public class PlayerController : MonoBehaviour
         }
     }
     private void StopRidingHorse()
-    {
-        Instantiate(horseGettingRidden, transform.position, transform.rotation);
-        horseGettingRidden = null;
+    {       
         animator.SetBool(objectTag, false);
         objectTag = null;
+        Instantiate(horseGettingRidden, transform.position, transform.rotation);
+        horseGettingRidden = null;
     }
     private void Move()
     {

@@ -17,7 +17,7 @@ public class Item : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.localPosition = new Vector2(0.081f, -0.024f);
+            gameObject.transform.localPosition = new Vector2(0.085f, 0.06f);
             transform.localRotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
         }
         else

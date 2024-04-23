@@ -56,12 +56,12 @@ public class PlayerInventory : MonoBehaviour
             selectedItem = 0;
             handBG.canvasRenderer.SetAlpha(1);
             appleBG.canvasRenderer.SetAlpha(.8f);
-            carrotBG.canvasRenderer.SetAlpha(.8f);   
+            carrotBG.canvasRenderer.SetAlpha(.8f);
             brushBG.canvasRenderer.SetAlpha(.8f);
             whipBG.canvasRenderer.SetAlpha(.8f);
             NewItemSelected();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2) && inventoryList.Count > 1 && hasApple) 
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && inventoryList.Count > 1 && hasApple)
         {
             selectedItem = 1;
             handBG.canvasRenderer.SetAlpha(.8f);
