@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     public Image brushIcon;
     public Image whipIcon;
     public Image carrotIcon;
-
 
     [SerializeField] private Rigidbody2D rb2d;
     public PlayerInventory inv;
