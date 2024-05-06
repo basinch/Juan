@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Rendering.Universal;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace WorldTime
 {
     [RequireComponent(typeof(Light2D))]
     public class DayNightCycle : MonoBehaviour
     {
+        [SerializeField] Image akrep;
+        [SerializeField] Image yelkovan;
+
         public float duration = 5f;
 
         [SerializeField] private Gradient gradient;
