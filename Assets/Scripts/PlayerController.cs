@@ -35,14 +35,14 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {        
         RideHorse();
         FeedHorse();
         Move();
     }
     void FixedUpdate()
     {
-        rb2d.MovePosition((rb2d.position + movement * moveSpeed * Time.fixedDeltaTime));
+        rb2d.MovePosition((((rb2d.position + movement * moveSpeed * Time.fixedDeltaTime))));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -218,7 +218,7 @@ public class PlayerController : MonoBehaviour
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        animator.SetFloat("Speed", Mathf.Clamp(movement.sqrMagnitude,0,1));
 
         if (inv.selectedItem > 0)
         {
