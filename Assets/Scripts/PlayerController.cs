@@ -229,4 +229,6 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Holding", false);
         }
     }
+
+
 }

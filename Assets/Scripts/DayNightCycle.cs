@@ -20,6 +20,9 @@ namespace WorldTime
 
         private void Awake()
         {
+            float akrepRot = akrep.transform.rotation.z;
+            float yelkovanRot = akrep.transform.rotation.z;
+
             light2d = GetComponent<Light2D>();
             startTime = Time.time;
         }
