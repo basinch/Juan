@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour
     private GameObject collidedObject;
     private bool isColliding = false;
     public string objectTag;
+
+    public HorseEffects hfx;
+
     void Start()
     {
 
@@ -42,7 +45,7 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        rb2d.MovePosition((((rb2d.position + movement * moveSpeed * Time.fixedDeltaTime))));
+        rb2d.MovePosition(rb2d.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -68,31 +71,52 @@ public class PlayerController : MonoBehaviour
         {
             if (collidedObject != null && horseGettingRidden == null)
             {
+                //////////////////////////////////////////
                 if (collidedObject.CompareTag("Beyazid") && !inv.hasApple && isColliding)
                 {
 
                     StartRiding();
                 }
-                else if (collidedObject.CompareTag("Donkey") && !inv.hasCarrot && isColliding)
+                else
+                {
+                }
+                //////////////////////////////////////////
+                if (collidedObject.CompareTag("Donkey") && !inv.hasCarrot && isColliding)
                 {
 
                     StartRiding();
                 }
-                else if (collidedObject.CompareTag("Gulpembe") && !inv.hasBrush && isColliding)
+                else
+                {
+                }
+                //////////////////////////////////////////
+                if (collidedObject.CompareTag("Gulpembe") && !inv.hasBrush && isColliding)
                 {
 
                     StartRiding();
                 }
-                else if (collidedObject.CompareTag("Juan") && !inv.hasWhip && isColliding)
+                else
+                {
+                }
+                //////////////////////////////////////////
+                if (collidedObject.CompareTag("Juan") && !inv.hasWhip && isColliding)
                 {
 
                     StartRiding();
                 }
-                else if (collidedObject.CompareTag("twig") && isColliding)
+                else
+                {
+                }
+                //////////////////////////////////////////
+                if (collidedObject.CompareTag("twig") && isColliding)
                 {
 
                     StartRiding();
                 }
+                else
+                {
+                }
+                //////////////////////////////////////////
             }
             else if(horseGettingRidden)
             {
@@ -115,37 +139,75 @@ public class PlayerController : MonoBehaviour
         {
             if (collidedObject != null)
             {
+                ///////////////////////////
                 if (collidedObject.CompareTag("Beyazid") && inv.selectedItem == 1 && isColliding)
                 {
+                    hfx.Elma();
                     inv.hasApple = false;
                     appleIcon.color = Color.black;
                     inv.selectedItem = 0;
                     inv.selectedItem = 0;
                     inv.NewItemSelected();
                 }
-                else if (collidedObject.CompareTag("Donkey") && inv.selectedItem == 2 && isColliding)
+                else
                 {
+                    if (inv.hasApple)
+                    {
+
+                    }
+                }
+                ////////////////////////////////////
+                if (collidedObject.CompareTag("Donkey") && inv.selectedItem == 2 && isColliding)
+                {
+                    StartCoroutine("EssekYemek");
                     inv.hasCarrot = false;
                     carrotIcon.color = Color.black;
                     inv.selectedItem = 0;
                     inv.selectedItem = 0;
                     inv.NewItemSelected();
                 }
-                else if (collidedObject.CompareTag("Gulpembe") && inv.selectedItem == 3 && isColliding)
+                else
                 {
+                    if (inv.hasCarrot)
+                    {
+                        hfx.EssekSinirli();
+
+                    }
+                }
+                //////////////////////////////////////
+                if (collidedObject.CompareTag("Gulpembe") && inv.selectedItem == 3 && isColliding)
+                {
+                    hfx.Timar();
                     inv.hasBrush = false;
                     brushIcon.color = Color.black;
                     inv.selectedItem = 0;
                     inv.selectedItem = 0;
                     inv.NewItemSelected();
                 }
-                else if (collidedObject.CompareTag("Juan") && inv.selectedItem == 4 && isColliding)
+                else
                 {
+                    if (inv.hasBrush)
+                    {
+
+                    }
+                }
+                //////////////////////////////////
+                if (collidedObject.CompareTag("Juan") && inv.selectedItem == 4 && isColliding)
+                {
+                    hfx.Kirbac();
                     inv.hasWhip = false;
                     whipIcon.color = Color.black;
                     inv.selectedItem = 0;
                     inv.NewItemSelected();
                 }
+                else
+                {
+                    if (inv.hasWhip)
+                    {
+
+                    }
+                }
+                ////////////////////////////////
             }
         }
     }
@@ -229,6 +291,15 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Holding", false);
         }
     }
+    public void PlayAudio()
+    {
 
+    }
 
+    IEnumerator EssekYemek()
+    {
+        hfx.Havuc();
+        yield return new WaitForSeconds(1);
+        hfx.EssekMutlu();
+    }
 }
