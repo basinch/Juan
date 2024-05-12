@@ -218,30 +218,35 @@ public class PlayerController : MonoBehaviour
             objectTag = "Beyazid";
             Destroy(collidedObject);
             animator.SetBool(objectTag, true);
+            animator.SetBool("RidingHorse", true);
         }
         else if (collidedObject.CompareTag("Donkey") && !inv.hasCarrot)
         {
             objectTag = "Donkey";
             Destroy(collidedObject);
             animator.SetBool(objectTag, true);
+            animator.SetBool("RidingHorse", true);
         }
         else if (collidedObject.CompareTag("Gulpembe") && !inv.hasBrush)
         {
             objectTag = "Gulpembe";
             Destroy(collidedObject);
             animator.SetBool(objectTag, true);
+            animator.SetBool("RidingHorse", true);
         }
         else if (collidedObject.CompareTag("Juan") && !inv.hasWhip)
         {
             objectTag = "Juan";
             Destroy(collidedObject);
             animator.SetBool(objectTag, true);
+            animator.SetBool("RidingHorse", true);
         }
         else if (collidedObject.CompareTag("twig"))
         {
             objectTag = "twig";
             Destroy(collidedObject);
             animator.SetBool(objectTag, true);
+            animator.SetBool("RidingHorse", true);
         }
 
         if (objectTag != null)
@@ -269,6 +274,7 @@ public class PlayerController : MonoBehaviour
     private void StopRidingHorse()
     {       
         animator.SetBool(objectTag, false);
+        animator.SetBool("RidingHorse", false);
         objectTag = null;
         Instantiate(horseGettingRidden, transform.position, transform.rotation);
         horseGettingRidden = null;
