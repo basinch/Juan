@@ -1,0 +1,34 @@
+{
+    "name": "PllayerInputManager",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "360569f4-9f08-454a-bcc6-9e102b31c151",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "aa41ed45-62eb-4ae6-b4f9-e02d6218dc1e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8bde47f9-fd31-4f23-9fd4-5de6b2181545",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
