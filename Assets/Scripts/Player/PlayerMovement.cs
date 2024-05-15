@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb2d;
-    public float moveSpeed = 5f;
-    public Animator animator;
+    private Rigidbody2D rb2d;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     private bool facingNorth = false;
     private bool facingSouth = false;
@@ -14,7 +14,14 @@ public class PlayerMovement : MonoBehaviour
     private bool facingEast = false;
     public bool isMoving = false;
 
-    private void FixedUpdate()
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+        rb2d = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    public void Walk(float moveSpeed)
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
@@ -28,11 +35,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 facingEast = true;
                 facingWest = false;
+                transform.eulerAngles = new Vector3(0, 0, 0);
             }
             else if (movementInput.x < 0)
             {
                 facingEast = false;
                 facingWest = true;
+                transform.eulerAngles = new Vector3(0, 180, 0);
             }
             else
             {
