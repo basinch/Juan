@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Donkey : MonoBehaviour, IHorses
 {
+    public bool friend;
     // Start is called before the first frame update
     void Start()
     {

@@ -3,7 +3,14 @@ guid: 9e430c801a4fcc34ab6a82b4e0744883
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - audi: {instanceID: 0}
+  - elma: {fileID: 8300000, guid: 5f78b321e8f7ce64b96c855dd29bb2f7, type: 3}
+  - essekMutlu: {fileID: 8300000, guid: 1f4a0ea5092ddb547a8549a65c836656, type: 3}
+  - essekSinirli: {fileID: 8300000, guid: 35f0d19da0199b842b5fb751691d3064, type: 3}
+  - havuc: {fileID: 8300000, guid: 2e8b18003f1d96348844cc22c8b1c24b, type: 3}
+  - kirbac: {fileID: 8300000, guid: 8325f2131d94b6c459ace6a9965dd534, type: 3}
+  - timar: {fileID: 8300000, guid: 2a335d6b5391e7b4c94b41f1d023f799, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

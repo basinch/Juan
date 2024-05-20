@@ -41,7 +41,7 @@ public class HorseEffects : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(timar, transform.position);
     }
-    // Update is called once per frame
+
     void Update()
     {
         

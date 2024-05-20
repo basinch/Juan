@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c83cd61f427fe084f8a426d073ebaf0e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - emotionObject: {instanceID: 0}
+  - happySprite: {instanceID: 0}
+  - angrySprite: {instanceID: 0}
+  - targetContainer: {instanceID: 0}
+  - player: {fileID: 6500393713020871788, guid: 9bbdddefc44e9ca4ca4adfd412ab62a7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
