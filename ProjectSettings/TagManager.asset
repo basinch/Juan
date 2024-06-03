@@ -15,8 +15,12 @@ TagManager:
   - Juan
   - twig
   - Destroyer
+<<<<<<< Updated upstream
   - target
   - ismetpoint
+=======
+  - Cicek
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
