@@ -9,7 +9,7 @@ public class BarnSceneChanger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (inventory.hasApple == true && inventory.hasCarrot == true && inventory.hasBrush == true && inventory.hasWhip == true)
+        //if (inventory.hasApple == true && inventory.hasCarrot == true && inventory.hasBrush == true && inventory.hasWhip == true)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

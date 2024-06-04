@@ -3,24 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Pickable
-  - Whip
-  - Apple
-  - Carrot
-  - Brush
-  - Beyazid
-  - Donkey
-  - Gulpembe
-  - Juan
-  - twig
-  - Destroyer
-<<<<<<< Updated upstream
-  - target
-  - ismetpoint
-=======
-  - Cicek
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -28,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - player
-  - horse
-  - obstacle
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -55,18 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 2824464677
-    locked: 0
-  - name: Detils
-    uniqueID: 3179674913
-    locked: 0
-  - name: Ground
-    uniqueID: 3729973221
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Foreground
-    uniqueID: 894779323
     locked: 0
