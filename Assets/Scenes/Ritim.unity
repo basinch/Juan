@@ -383,7 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowImages:
   - {fileID: 768343786}
-  - {fileID: 1450053355}
+  - {fileID: 1614778982}
   - {fileID: 2111706548}
   - {fileID: 1614778982}
   upArrow: {fileID: 1006363813, guid: 155b86bf20e3db948a404af7fcd24807, type: 3}
