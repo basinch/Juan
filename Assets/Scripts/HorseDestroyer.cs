@@ -19,7 +19,8 @@ public class HorseDestroyer : MonoBehaviour
             other.CompareTag("Donkey") ||
             other.CompareTag("Gulpembe") ||
             other.CompareTag("Juan") ||
-            other.CompareTag("twig"))
+            other.CompareTag("twig") ||
+            other.CompareTag("Sacit "))
         {
             Destroy(other.gameObject);
             endGameCounter++;
