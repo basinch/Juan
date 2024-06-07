@@ -30,11 +30,13 @@ public class HorseDestroyer : MonoBehaviour
                 endGameCounter++;
             }
         }
-
-
     }
-        // Update is called once per frame
-        void Update()
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        horseScript = null;
+    }
+    // Update is called once per frame
+    void Update()
     {
         if(endGameCounter == 5)
         {
