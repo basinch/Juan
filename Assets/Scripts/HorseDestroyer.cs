@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class HorseDestroyer : MonoBehaviour
 {
-    public int endGameCounter = 0; 
+    public int endGameCounter = 0;
+    HorseScript horseScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,16 +16,21 @@ public class HorseDestroyer : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("asd");
-        if (other.CompareTag("Beyazid") ||
-            other.CompareTag("Donkey") ||
-            other.CompareTag("Gulpembe") ||
-            other.CompareTag("Juan") ||
-            other.CompareTag("twig") ||
-            other.CompareTag("Sacit "))
+        if (horseScript != null || horseScript.isFriend)
         {
-            Destroy(other.gameObject);
-            endGameCounter++;
+            if (other.CompareTag("Beyazid") ||
+                 other.CompareTag("Donkey") ||
+                 other.CompareTag("Gulpembe") ||
+                 other.CompareTag("Juan") ||
+                 other.CompareTag("twig") ||
+                other.CompareTag("Sacit "))
+            {
+                Destroy(other.gameObject);
+                horseScript = other.gameObject.GetComponent<HorseScript>();
+                endGameCounter++;
+            }
         }
+
 
     }
         // Update is called once per frame
