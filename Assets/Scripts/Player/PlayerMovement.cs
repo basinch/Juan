@@ -101,11 +101,6 @@ public class PlayerMovement : MonoBehaviour
                 aiFlipper.isMoving = false;
             }
         }
-        if(horseGettingRidden != null)
-        {
-            rb2d.position = playerController.ismetPoint.transform.position;
-        }
-
 
         animator.SetFloat("Horizontal", movementInput.x);
         animator.SetFloat("Vertical", movementInput.y);

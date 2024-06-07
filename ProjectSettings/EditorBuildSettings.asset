@@ -27,6 +27,15 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver.unity
     guid: 4c009d244e1410749aac5aa079df5332
   - enabled: 1
+    path: Assets/Scenes/HorsePokemon.unity
+    guid: 024093c7848465a4486de4e4576e495b
+  - enabled: 1
+    path: Assets/Scenes/TwilightPuzzle.unity
+    guid: a241478ecab3fcb4f8844e5f47c7afd4
+  - enabled: 1
+    path: Assets/Scenes/kayikminigame.unity
+    guid: 13a2d119198c09841a34b4a45602be5d
+  - enabled: 1
     path: Assets/Scenes/YouWin.unity
     guid: 1d6bc2d9604a5e14992b4435b9bcac5b
   m_configObjects: {}

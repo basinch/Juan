@@ -259,6 +259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 11323002}
   objectDragToPosition: {fileID: 1104778894}
+  starCounter: {fileID: 0}
+  star: {fileID: 0}
   dropDistance: 40
   isLocked: 0
 --- !u!1 &174444086
@@ -472,6 +474,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 256076878}
   objectDragToPosition: {fileID: 1586325628}
+  starCounter: {fileID: 0}
+  star: {fileID: 0}
   dropDistance: 40
   isLocked: 0
 --- !u!1 &446646925
@@ -485,9 +489,10 @@ GameObject:
   - component: {fileID: 446646928}
   - component: {fileID: 446646927}
   - component: {fileID: 446646926}
+  - component: {fileID: 446646929}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: event
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -542,6 +547,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &446646929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446646925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f566593595ca44ba7bd65434fd8d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starCount: 0
 --- !u!1 &681319768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1026,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1207815988}
   objectDragToPosition: {fileID: 1339666553}
+  starCounter: {fileID: 0}
+  star: {fileID: 0}
   dropDistance: 40
   isLocked: 0
 --- !u!1 &1339666553
@@ -1521,6 +1541,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1607198155}
   objectDragToPosition: {fileID: 2011007216}
+  starCounter: {fileID: 0}
+  star: {fileID: 0}
   dropDistance: 40
   isLocked: 0
 --- !u!1 &1649616615
@@ -1734,6 +1756,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1773860042}
   objectDragToPosition: {fileID: 1408100549}
+  starCounter: {fileID: 0}
+  star: {fileID: 0}
   dropDistance: 40
   isLocked: 0
 --- !u!1 &1971692554
@@ -1947,6 +1971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 1994786153}
   objectDragToPosition: {fileID: 1971692554}
+  starCounter: {fileID: 0}
+  star: {fileID: 0}
   dropDistance: 40
   isLocked: 0
 --- !u!1 &2010653693
@@ -2085,6 +2111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDrag: {fileID: 2010653693}
   objectDragToPosition: {fileID: 174444086}
+  starCounter: {fileID: 0}
+  star: {fileID: 0}
   dropDistance: 40
   isLocked: 0
 --- !u!1 &2011007216

@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DragDrop : MonoBehaviour
 {
     public GameObject objectToDrag;
     public GameObject objectDragToPosition;
+    public GameObject starCounter;
+    public StarCounter star;
 
     public float dropDistance;
 
@@ -17,6 +20,8 @@ public class DragDrop : MonoBehaviour
     void Start()
     {
         objectInitPosition = objectToDrag.transform.position;
+        starCounter = GameObject.FindWithTag("event");
+        star = starCounter.GetComponent<StarCounter>();
     }
 
     public void DragObject()
@@ -35,6 +40,7 @@ public class DragDrop : MonoBehaviour
         {
             isLocked = true;
             objectToDrag.transform.position = objectDragToPosition.transform.position;
+            star.starCount += 1;
         }
         else
         {

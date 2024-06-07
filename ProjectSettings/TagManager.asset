@@ -17,6 +17,7 @@ TagManager:
   - Brush
   - Juan
   - Sacit
+  - event
   layers:
   - Default
   - TransparentFX
