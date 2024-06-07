@@ -16,7 +16,7 @@ public class HorseDestroyer : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("asd");
-        if (horseScript != null && horseScript.isFriend)
+        if (horseScript != null && horseScript.isFriend && !horseScript.isGetiingRidden)
         {
             if (other.CompareTag("Beyazid") ||
                  other.CompareTag("Donkey") ||
