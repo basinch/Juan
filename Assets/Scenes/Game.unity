@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 153862665}
   - component: {fileID: 153862664}
   - component: {fileID: 153862663}
+  - component: {fileID: 153862667}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -491,6 +492,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &153862667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153862662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2992b47bdb952c440aec6af7ebbb1339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelObject: {fileID: 1050052362}
+  bookImg:
+  - {fileID: 21300000, guid: 914001122e50bb144b1b4db11b7f8b10, type: 3}
+  - {fileID: 21300000, guid: 54aeea8efe8fb0b4ea35c03099bd9c0b, type: 3}
+  - {fileID: 21300000, guid: 7558590682289ba46a6d5a096b8af776, type: 3}
+  imageHolder: {fileID: 522109887}
 --- !u!1 &176727193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,7 +1562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 914001122e50bb144b1b4db11b7f8b10, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1685,7 +1704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 498.32205, y: -268.7}
+  m_AnchoredPosition: {x: 442, y: -244}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &559562879
@@ -1732,7 +1751,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1895562400}
+      - m_Target: {fileID: 153862667}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: NextButton
         m_Mode: 1
@@ -2324,7 +2343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -497.5, y: -268.5}
+  m_AnchoredPosition: {x: -470, y: -245}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &680921809
@@ -2371,9 +2390,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
+      - m_Target: {fileID: 153862667}
+        m_TargetAssemblyTypeName: Book, Assembly-CSharp
+        m_MethodName: PrevButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2692,11 +2711,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 791199048}
-  smoothSpeed: 0.8
   offset: {x: 0, y: 0, z: 0}
   cameraFrontViewMultiplier: 1
   cameraFrontViewSpeed: 0.08
-  comeBackSpeed: 2
 --- !u!81 &731161660
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8280,7 +8297,7 @@ SortingGroup:
   m_GameObject: {fileID: 1365361761}
   m_Enabled: 1
   m_SortingLayerID: -1470502619
-  m_SortingLayer: -3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!1 &1370784479
@@ -8905,7 +8922,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1895562400}
+      - m_Target: {fileID: 153862667}
         m_TargetAssemblyTypeName: Book, Assembly-CSharp
         m_MethodName: Onclick
         m_Mode: 1
@@ -9684,56 +9701,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -185}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1895562399
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1895562401}
-  - component: {fileID: 1895562400}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1895562400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895562399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2992b47bdb952c440aec6af7ebbb1339, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelObject: {fileID: 1050052362}
-  bookImg:
-  - {fileID: 21300000, guid: 914001122e50bb144b1b4db11b7f8b10, type: 3}
-  - {fileID: 21300000, guid: 54aeea8efe8fb0b4ea35c03099bd9c0b, type: 3}
-  - {fileID: 21300000, guid: 7558590682289ba46a6d5a096b8af776, type: 3}
-  imageHolder: {fileID: 522109887}
---- !u!4 &1895562401
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895562399}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 121.875084, y: 312.0863, z: -3.0982182}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1895723320
 GameObject:
   m_ObjectHideFlags: 0
@@ -9752,7 +9719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1895723321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10805,7 +10772,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1470502619
-  m_SortingLayer: -3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -134318,7 +134285,6 @@ SceneRoots:
   - {fileID: 4688909256930313079}
   - {fileID: 153862666}
   - {fileID: 526550701}
-  - {fileID: 1895562401}
   - {fileID: 798031656}
   - {fileID: 1764029206}
   - {fileID: 1895723324}

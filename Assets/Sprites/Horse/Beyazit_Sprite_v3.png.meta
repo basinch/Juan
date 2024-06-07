@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 70
+        width: 30
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd5bf5f0dbcd3643be747f548b9fead
+      internalID: 905981509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 67
+        width: 31
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e09e11c34db37a489ddb4b276841d97
+      internalID: 196904628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 67
+        width: 31
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de613ea4024ecad40ab27b7bcfcda8fd
+      internalID: 1997116493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 67
+        width: 31
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23b7631d7a5b21459afac107eaaa489
+      internalID: -889679974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 36
+        width: 30
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a2191c3aa0c344c8f769f37ff746ae
+      internalID: -1136761465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 33
+        width: 31
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0aa0880eac82324486fa0422c7e7d2a
+      internalID: -957573653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_6
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 33
+        width: 31
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb1caec590e58b4bad6bff1c78251ef
+      internalID: -1578611432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 33
+        width: 31
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f24e26362e12942a969d490cffd5b9
+      internalID: 340098119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 29
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f8a9101f0daaf4687b1c0effab2411
+      internalID: -240363076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beyazit_Sprite_v3_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2
+        width: 29
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63e038172370e3408eb5814c3dd5a7c
+      internalID: -622044111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +329,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beyazit_Sprite_v3_0: 905981509
+      Beyazit_Sprite_v3_1: 196904628
+      Beyazit_Sprite_v3_2: 1997116493
+      Beyazit_Sprite_v3_3: -889679974
+      Beyazit_Sprite_v3_4: -1136761465
+      Beyazit_Sprite_v3_5: -957573653
+      Beyazit_Sprite_v3_6: -1578611432
+      Beyazit_Sprite_v3_7: 340098119
+      Beyazit_Sprite_v3_8: -240363076
+      Beyazit_Sprite_v3_9: -622044111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

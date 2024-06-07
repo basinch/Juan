@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 64
+        width: 32
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1bdb74b783ef24080fa5a96fc9d3d6
+      internalID: -1989332856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 62
+        width: 32
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3b774b629cb6d41bf7c41e91824c45
+      internalID: -10127956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 62
+        width: 32
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07309ab8fe1fc441a85e06487e46343
+      internalID: -1133419319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 62
+        width: 32
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e86f5fde90f941499438aaa1bfeb071
+      internalID: 1088169582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 34
+        width: 32
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585065a7f1351774a89087a031163b70
+      internalID: 161282255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 32
+        width: 32
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4111d19baf6bcc4ea7935fb1dd587ef
+      internalID: -185227526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_6
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 32
+        width: 32
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f675902e4f4f7214688379d25e8a850f
+      internalID: -1684159636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_7
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 32
+        width: 32
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9770868c5826b4fbcba20713905237
+      internalID: -10091933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 31
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89e94566f8b15f4d86bf606f909a738
+      internalID: -291466038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twilight_Sprite_v3_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 2
+        width: 31
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec941b9398d0f5a4fafb8963db43c2e7
+      internalID: 1094462609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +329,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Twilight_Sprite_v3_0: -1989332856
+      Twilight_Sprite_v3_1: -10127956
+      Twilight_Sprite_v3_2: -1133419319
+      Twilight_Sprite_v3_3: 1088169582
+      Twilight_Sprite_v3_4: 161282255
+      Twilight_Sprite_v3_5: -185227526
+      Twilight_Sprite_v3_6: -1684159636
+      Twilight_Sprite_v3_7: -10091933
+      Twilight_Sprite_v3_8: -291466038
+      Twilight_Sprite_v3_9: 1094462609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

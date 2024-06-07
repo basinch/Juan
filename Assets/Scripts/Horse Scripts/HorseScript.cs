@@ -37,7 +37,7 @@ public class HorseScript : MonoBehaviour, IHorses
         {
             if (isGetiingRidden && playerMovement.isMoving)
             {
-                Vector3 desiredPosition = new Vector3(player.transform.position.x + 0.15f, player.transform.position.y + 1.05f, 0);
+                Vector3 desiredPosition = new Vector3(player.transform.position.x + 0.15f, player.transform.position.y, 0);
                 Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, 1);
                 transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, transform.position.z);
             }
@@ -46,12 +46,12 @@ public class HorseScript : MonoBehaviour, IHorses
         {
             if (isGetiingRidden && playerMovement.isMoving)
             {
-                Vector3 desiredPosition = new Vector3(player.transform.position.x + -0.15f, player.transform.position.y + 1.05f, 0);
+                Vector3 desiredPosition = new Vector3(player.transform.position.x + -0.15f, player.transform.position.y, 0);
                 Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, 1);
                 transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, transform.position.z);
             }
         }
-
+        
        
 
     }

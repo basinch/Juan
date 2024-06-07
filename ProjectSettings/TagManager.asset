@@ -3,12 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - target
+  - Destroyer
+  - Beyazid
+  - twig
+  - Donkey
+  - ismetpoint
+  - Gulpembe
+  - Carrot
+  - Apple
+  - Whip
+  - Brush
+  - Juan
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - obs
   - Water
   - UI
   - 
