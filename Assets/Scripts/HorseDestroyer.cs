@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class HorseDestroyer : MonoBehaviour
 {
     public int endGameCounter = 0;
-    HorseScript horseScript;
+    public HorseScript horseScript;
     // Start is called before the first frame update
     void Start()
     {
